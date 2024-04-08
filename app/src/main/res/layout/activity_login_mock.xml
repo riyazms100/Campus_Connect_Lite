@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginMockActivity">
+  
+  <TextView
+      android:id="@+id/ret"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+    android:text="@string/app_name"
+      android:gravity="center"
+      android:layout_marginTop="200dp"
+    android:textSize="40sp"
+    android:fontFamily="monospace"
+    android:textColor="#283593" />
+
+  <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="secure and fast chat app"
+      android:gravity="center"
+      android:layout_marginStart="90dp"
+      android:fontFamily="monospace"
+      android:textColor="#283593"
+      android:id="@+id/res"
+      android:layout_below="@+id/ret"/>
+
+  <EditText
+
+      android:layout_width="300dp"
+      android:layout_height="wrap_content"
+    android:hint="user ID"
+      android:layout_marginStart="40dp"
+      android:layout_below="@+id/res"
+      android:layout_marginTop="65dp"
+    android:layout_marginBottom="8dp"
+    android:id="@+id/userid_input" />
+
+  <Button
+      android:id="@+id/login_btn"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_below="@+id/userid_input"
+      android:layout_marginStart="150dp"
+      android:text="Login" />
+
+</RelativeLayout>
